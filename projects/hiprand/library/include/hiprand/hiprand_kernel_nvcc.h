@@ -38,6 +38,13 @@
     }; \
     typedef struct hiprand_name hiprand_name ## _t;
 
+#define print(lNum)                             \
+do {                                            \
+        printf("I am in %d\n", lNum);           \
+}                                               \
+while(0)                                        \
+ 
+
 DEFINE_HIPRAND_STATE(hiprandState, curandState)
 DEFINE_HIPRAND_STATE(hiprandStateXORWOW, curandStateXORWOW)
 DEFINE_HIPRAND_STATE(hiprandStatePhilox4_32_10, curandStatePhilox4_32_10)
